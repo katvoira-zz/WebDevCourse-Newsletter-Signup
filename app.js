@@ -39,7 +39,7 @@ app.post("/", function(req,res){
 
     const options = {
         method: "POST",
-        auth: "katvoira2:c61c7b6da79fa93a86adc848544f5c8b-us6"
+        auth: process.env.APIKey
     };
 
     const request = https.request(url, options, function(response){
